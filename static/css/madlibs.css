@@ -1,0 +1,8 @@
+/* change H1 elements to be blue */
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: blue;
+}

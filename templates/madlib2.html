@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Madlibs Again Again{% endblock %}
+
+{% block content %}
+<h3>Your custom madlib...</h3>
+
+<p> There once was a {{ color }} {{ noun }} in the forest. When {{ person }} found it, it laughed in a totally 
+    {% for adjective in adjectives %} 
+    {{ adjective }}, 
+    {% endfor %}
+    way. </p>
+
+{% endblock %}
+

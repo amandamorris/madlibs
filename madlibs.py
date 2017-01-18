@@ -57,7 +57,8 @@ def show_madlib():
     person = request.args.get("person")
     adjectives = request.args.getlist("adjective")
 
-    return render_template("madlib.html",
+    rand_madlib = choice(["madlib.html", "madlib1.html", "madlib2.html"])
+    return render_template(rand_madlib,
                            color=color,
                            noun=noun,
                            person=person,
