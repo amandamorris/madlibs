@@ -5,7 +5,11 @@
 {% block content %}
 <h3>Your custom madlib...</h3>
 
-<p> There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way. </p>
+<p> There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally 
+    {% for adjective in adjectives %} 
+    {{ adjective }}, 
+    {% endfor %}
+    way. </p>
 
 {% endblock %}
 
