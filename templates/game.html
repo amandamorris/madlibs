@@ -1,11 +1,12 @@
+{% extends 'base.html' %}
 <!doctype html>
 <html>
 <head>
   <title>Game!</title>
 </head>
 <body>
-
-<h1>Game!</h1>
+    {% block content %}
+<h1>Choose your words carefully!</h1>
 
 <form action="/madlib">
   Choose a person: <input type="text" name="person"><br>
@@ -18,6 +19,6 @@
   Choose a adjective: <input type="text" name="adjective"><br>
   <input type="submit">
 </form>
-
+{% endblock %}
 </body>
 </html>
